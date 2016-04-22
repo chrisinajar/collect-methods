@@ -1,0 +1,27 @@
+{
+  "name": "collect-methods",
+  "version": "0.0.0",
+  "description": "Collect a series of methods then run them",
+  "main": "index.js",
+  "scripts": {
+    "test": "semistandard && tape test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisinajar/collect-methods.git"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "author": "Chris Vickery <chrisinajar@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisinajar/collect-methods/issues"
+  },
+  "homepage": "https://github.com/chrisinajar/collect-methods#readme",
+  "devDependencies": {
+    "semistandard": "^7.0.5",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  }
+}
