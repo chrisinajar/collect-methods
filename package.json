@@ -1,6 +1,6 @@
 {
   "name": "collect-methods",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Collect a series of methods then run them",
   "main": "index.js",
   "scripts": {
