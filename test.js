@@ -61,3 +61,16 @@ test('error handling', function (t) {
 
   t.throws(collect, 'throws errors');
 });
+
+test('can cancel queued methods', function (t) {
+  t.plan(3);
+  var collect = Collector();
+
+  collect(t.pass);
+  var handler = collect(t.fail);
+  collect(t.pass);
+
+  t.doesNotThrow(handler);
+  collect();
+  collect();
+});
