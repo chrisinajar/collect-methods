@@ -74,3 +74,15 @@ test('can cancel queued methods', function (t) {
   collect();
   collect();
 });
+
+test('can queue from within handler', function (t) {
+  t.plan(2);
+  var collect = Collector();
+
+  collect(t.pass);
+  collect(function () {
+    collect(t.pass);
+  });
+  collect();
+  collect();
+});
